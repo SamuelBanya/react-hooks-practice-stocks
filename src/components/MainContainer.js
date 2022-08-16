@@ -10,7 +10,7 @@ function MainContainer() {
   const [filterBy, setFilterBy] = useState("Tech");
 
   useEffect(() => {
-    fetch("http://localhost:3001/stocks")
+    fetch("https://stocks-jsonserver.herokuapp.com/stocks")
       .then((response) => response.json())
       .then(setStocks);
   }, []);
