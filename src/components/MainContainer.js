@@ -10,7 +10,7 @@ function MainContainer() {
   const [filterBy, setFilterBy] = useState("Tech");
 
   useEffect(() => {
-    fetch("https://stocks-jsonserver.herokuapp.com/stocks")
+    fetch("https://react-hooks-practice-stocks-jsonserver.onrender.com/stocks")
       .then((response) => response.json())
       .then(setStocks);
   }, []);
